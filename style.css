@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@300;500;700;800;900&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.header{
+    background-image: url(manzara.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo{
+    font-size: 18px ;
+    letter-spacing: 2px;
+    border-bottom: 5px solid rgb(236, 237, 230);
+    border-radius: 35px;
+    color: rgb(236, 237, 230);
+}
+
+ul{
+    display: flex;
+}
+li{
+    margin-left:27px;
+}
+li:first-child{
+    margin-right: 20px;
+}
+a{
+    color: black;
+    font-weight:bold;
+    font-size: 15px;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-bottom:15px ;
+}
+.first-letter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+h3{
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.btn-basla{
+    display: block;
+    background-color: rgb(236, 237, 230);
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-basla::after{
+    content: "GEZ";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(150, 210, 218);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.btn-basla:hover::after{
+    top: 0;
+}
+/* ABOUT */
+.about{
+    margin-bottom:150px ;
+}
+.about-title{
+    margin: 60px 0;
+}
+.about-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color:black;
+    font-size: 30px;
+    font-weight: 600;
+}
+.about-title h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color:black;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.about-image{
+    width: 40%;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-text{
+    width: 40%;
+}
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family:'Herr Von Muellerhoff', cursive; 
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+}
+.asteriks{
+    margin-bottom: 25px;
+    color:black;
+    text-align: center;
+     font-size: 30px;
+}
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+/*PORTFOLYO*/
+.portfolyo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolyo-item
+{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.portfolyo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.olerlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(150, 210, 218);
+    color: rgb(225, 228, 230);
+    position: absolute;
+    font-size: 80px;
+    top: 100%;
+    left: 0;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.portfolyo-item:hover .olerlay{
+top: 0;
+}
+.portfolyo-item:hover img{
+    transform: scale(1.1);
+}
+/*CONTACT*/
+.contact{
+    padding: 10px 0;
+}
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color:black;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.conctac-content{
+    margin-top:60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+/*FOOTER*/
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+.footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color:rgb(250, 249, 249);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+    flex-basis: 55½;
+    line-height: 2;
+    font-size: 12px;
+    margin-bottom: 25px;
+
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.footer-social i{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 40px;
+}
+.footer-social:first-child{
+    margin-left: 65px;
+}
+#menu-icon{
+    font-size: 40px;
+    display: none;
+    margin-left: 20px;
+}
+
+/*MENU*/
+
+@media only screen and (max-width:800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:rgba(236, 237, 230, 0.811);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*ABOUT*/
+@media only screen and (max-width:990px){
+    .about-image{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-text{
+        width: 100%;
+    }
+}
+/*PORTFOLYO*/
+@media only screen and (max-width:990px){
+    .portfolyo .portfolyo-item{
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width:580px){
+    .portfolyo .portfolyo-item{
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width:800px){
+    .conctac-content{
+        flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 30px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+ .yukari_cik{
+    width: 90px;
+    height:30px;
+    background-color:rgb(143, 218, 243);
+    color:#fff;
+    font-size: 15px;
+    text-align: center;
+    display:block;
+    cursor:pointer;
+    border-radius: 10px;
+    margin-left: 1400px;
+}
+.yukari_cik:hover{
+    width: 90px;
+    height:30px;
+    background-color:rgb(25, 158, 215);
+    color:rgb(9, 8, 8);
+    font-size: 15px;
+    text-align: center;
+    display:block;
+    cursor:pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+.goster{
+    display: block;
+}
+.kaybol{
+    display: none;
+}
